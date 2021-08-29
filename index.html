@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Lexend Deca', sans-serif;
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    h1{
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 2.5rem;
+      color: hsl(0, 0%, 95%);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    
+    p{
+      line-height: 1.5rem;
+      color: hsla(0, 0%, 100%, 0.75);
+      margin-bottom: 3rem;
+    }
+
+    .btn{
+      border: 2px solid hsl(0, 0%, 95%);
+      border-radius: 30px;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: #333;
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    .sedans .btn{
+      color: hsl(31, 77%, 52%);
+      transition: all .5s;
+    }
+
+    .suvs .btn{
+      color: hsl(184, 100%, 22%);
+      transition: all .5s;
+    }
+
+    .luxury .btn{
+      color: hsl(179, 100%, 13%);
+      transition: all .5s;
+    }
+
+    .sedans .btn:hover{
+      background-color: hsl(31, 77%, 52%);
+      color: hsl(0, 0%, 95%);
+    }
+
+    .suvs .btn:hover{
+      background-color: hsl(184, 100%, 22%);
+      color: hsl(0, 0%, 95%);
+    }
+
+    .luxury .btn:hover{
+      background-color: hsl(179, 100%, 13%);
+      color: hsl(0, 0%, 95%);
+    }
+
+    .sedans{
+      background-color: hsl(31, 77%, 52%);
+    }
+
+    .suvs{
+      background-color: hsl(184, 100%, 22%);
+    }
+
+    .luxury{
+      background-color: hsl(179, 100%, 13%);
+    }
+
+    .sedans,
+    .suvs,
+    .luxury{
+      padding: 3rem;
+    }
+
+    img{
+      margin-bottom: 2rem;
+    }
+
+    main{
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 4rem 1.5rem;
+    }
+
+    @media(max-width: 300px){
+      .btn{
+        font-size: .7rem;
+        padding: .5rem 1rem;
+      }
+    }
+
+    @media(min-width: 500px){
+      main{
+        margin: 3rem 3rem;
+      }
+    }
+
+    @media(min-width: 850px){
+      main{
+        margin: 5rem 7rem;
+        display: flex;
+      }
+
+      .btn{
+        font-size: .7rem;
+        padding: .5rem 1rem;
+      }
+
+      p{
+        margin-bottom: 7rem;
+        font-size: .9rem;
+      }
+    }
+
+    @media(min-width: 1000px) and (min-height: 1300px){
+      main{
+        margin: 22rem 10rem;
+      }
+    }
+
+    @media(min-width: 1100px){
+      main{
+        margin: 4rem 13rem;
+      }
+
+      .btn{
+        padding: 1rem 2rem;
+      }
+    }
+
+    @media(min-width: 1350px) and (min-height: 1000px){
+      main{
+        margin: 13rem 13rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="sedans">
+      <img src="/images/icon-sedans.svg" alt="">
+      <h1>Sedans</h1>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+      or on your next road trip.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    
+    <div class="suvs">
+      <img src="/images/icon-suvs.svg" alt="">
+      <h1>SUVs</h1>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+      and off-road adventures.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    
+    <div class="luxury">
+      <img src="/images/icon-luxury.svg" alt="">
+      <h1>Luxury</h1>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+      rental and arrive in style.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </main>
+</body>
+</html>
